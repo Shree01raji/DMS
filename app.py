@@ -139,7 +139,6 @@ def view_documents():
         search_query=search_query,
         category=category
     )
-
 @app.route('/delete/<int:doc_id>', methods=['POST'])
 def delete_document(doc_id):
     doc = Document.query.get_or_404(doc_id)
